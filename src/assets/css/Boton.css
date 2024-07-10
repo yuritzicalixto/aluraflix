@@ -1,0 +1,53 @@
+.boton{
+    background-color: #262626;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 24px 32px;
+    border: 3px solid #fff;
+    color: #fff;
+    margin:  32px 0;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(0, 0, 0, 0.9);
+    border: 1px solid #2271D1;
+    box-shadow: inset 1px 1px 5px 5px #2271D1;
+    color: #2271D1;
+}
+
+/*
+.button{
+    background-color:#262626;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 15px;
+}
+
+.button-video:hover{
+    background-color: rgb(0, 0, 0, 0.9);
+    border: 1px solid #2271D1;
+    box-shadow: inset 1px 1px 5px 5px #2271D1;
+    color: #2271D1;
+}
+
+
+
+.boton{
+    background-color: #6278F7;
+    border-radius: 10px;
+    font-weight: 700;
+    padding: 24px 32px;
+    border: none;
+    color: #fff;
+    margin:  32px 0;
+    cursor: pointer;
+}
+
+.boton:hover{
+    color: rgb(190, 187, 187);
+}
+
+*/
