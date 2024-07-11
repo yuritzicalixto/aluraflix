@@ -10,7 +10,7 @@ const ListaOpciones =(props)=> {
         <div className="form-campos">
             <label>Categoría</label>
             <select>
-                
+                {equipos.map((equipo, index) =><option key={index}>{equipo}</option>)}
                 {/* {props.equipos.map( (equipo, index) => <option key={index}>{equipo}</option>)} */}
             </select>
         </div>
