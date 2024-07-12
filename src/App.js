@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './pages/Header';
@@ -6,11 +7,19 @@ import Video from './pages/Video';
 import Seccion from './pages/Seccion';
 
 function App() {
+  const [mostrarFormulario, actualizarMostrar]= useState(true)
+  //Ternario --> condicion ? seMuestra : noSeMuestra
+  //condicion && seMuestra 
+  const cambiarMostrar = () => {
+    actualizarMostrar(!mostrarFormulario)
+  }
+
   return (
     <>
     <Header/>
-    <Video/>
-    <Seccion/>
+    {/* {mostrarFormulario  ? <Video/> : <div></div>} */}
+    {mostrarFormulario && <Video/> }
+    <Seccion cambiarMostrar={cambiarMostrar}/>
     <Foter/>
     </>
   );

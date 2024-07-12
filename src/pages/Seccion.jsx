@@ -1,11 +1,20 @@
+import { useState } from "react"
 import "../assets/css/Seccion.css"
 import video from "../assets/img/claqueta.png"
 
-const Seccion = () => {
+const Seccion = (props) => {
+    // const [mostrar, actualizarMostrar] = useState(true)
+
+    // const manejarClick = ()=>{
+    //     console.log("Mostrar/Ocultar elemento");
+    //     actualizarMostrar(!mostrar)
+    // }
+
+
     return (
         <section className="seccion-video">
             <h3 className="title">Nuevo Video</h3>
-            <img src={video} alt="Nuevo Video"/>
+            <img src={video} alt="Nuevo Video" onClick={props.cambiarMostrar}/>
         </section>
     )
 }
