@@ -5,6 +5,7 @@ import Header from './pages/Header';
 import Foter from './pages/Footer';
 import Video from './pages/Video';
 import Seccion from './pages/Seccion';
+import EquiposSec from './pages/EquiposSec';
 
 function App() {
   const [mostrarFormulario, actualizarMostrar]= useState(true)
@@ -20,6 +21,7 @@ function App() {
     {/* {mostrarFormulario  ? <Video/> : <div></div>} */}
     {mostrarFormulario && <Video/> }
     <Seccion cambiarMostrar={cambiarMostrar}/>
+    <EquiposSec/>
     <Foter/>
     </>
   );

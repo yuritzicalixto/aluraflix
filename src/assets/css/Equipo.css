@@ -1,0 +1,31 @@
+.categoria-main{
+    width: 100%;
+    /* background-color: #c80085; */
+    box-sizing: border-box;
+    /* height: auto; */
+    margin-bottom: 10px;
+}
+
+.title-categoria{
+    margin: 0 15px 0 15px;
+    width: 432px;
+    height: 70px;
+    /* background-color: #00C86F; */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Source Sans 3", sans-serif;
+    margin-bottom: 20px;
+}
+
+.colaboradores{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);/*Se llenara automaticamente de las columnas del mismo tamaño que quepan*/
+    gap: 26px;
+    place-content: center;
+}
