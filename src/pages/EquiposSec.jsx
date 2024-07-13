@@ -1,5 +1,5 @@
 import "../assets/css/EquipoSec.css"
-import Equipo from "../pages/Equipo"
+import Equipo from "../assets/components/Equipo"
 
 const EquiposSec = () => {
     //Lista Opciones

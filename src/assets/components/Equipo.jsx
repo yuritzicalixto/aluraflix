@@ -1,5 +1,5 @@
-import "../assets/css/Equipo.css"
-import Colaborador from "../assets/components/Colaborador"
+import "../css/Equipo.css"
+import Colaborador from "../components/Colaborador"
 
 const Equipo = (props) => {
     const {colorPrimary, titulo}=props.datos

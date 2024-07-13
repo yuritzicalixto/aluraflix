@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "../assets/css/Seccion.css"
-import video from "../assets/img/claqueta.png"
+import video from "../assets/img/foto-video.png"
 
 const Seccion = (props) => {
     // const [mostrar, actualizarMostrar] = useState(true)

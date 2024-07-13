@@ -1,4 +1,5 @@
 import "../css/Colaborador.css"
+import x from "../img/marca-x-octagono.png"
 
 const Colaborador =()=> {
     return <section>
@@ -10,7 +11,7 @@ const Colaborador =()=> {
                 <p>Bike</p>
               </div>
               <figure>
-                <img src="./assets/icons/bt_add_to_cart.svg" alt="imagen"/>
+                <img src={x} alt="imagen"/>
               </figure>
             </div>
           </div>

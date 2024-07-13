@@ -6,16 +6,17 @@
 }
 
 .title{
-    color:#A5A5A5 ;
+    /* color:#A5A5A5 ; */
+    color: #081B29;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: bold;
     padding-bottom: 24px;
     border-bottom: 4px solid #A5A5A5;
 }
 
 .seccion-video img{
     position: absolute;
-    right: 35%;
+    right: 32%;
     cursor: pointer;
     width: 70px;
     height: 70px;
