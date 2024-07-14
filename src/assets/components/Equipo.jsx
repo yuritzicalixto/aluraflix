@@ -3,7 +3,7 @@ import Colaborador from "../components/Colaborador"
 
 const Equipo = (props) => {
     const {colorPrimary, titulo}=props.datos
-
+    const {colaboradores} = props
     const obj={
         backgroundColor: colorPrimary
     }
@@ -14,9 +14,10 @@ const Equipo = (props) => {
                 <h3>{titulo}</h3>
                 </div>
                 <div className="colaboradores">
-                    <Colaborador/>
-                    <Colaborador/>
-                    <Colaborador/> 
+                    {/* <Colaborador/>  */}
+                    {
+                        colaboradores.map((colaborador) => <Colaborador/>)
+                    }
                 </div>
             </section>
         </section>

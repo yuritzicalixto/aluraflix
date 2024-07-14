@@ -21,7 +21,11 @@ const EquiposSec = () => {
     return (
          <section className="main">
             {
-                equipos.map((equipo) => <Equipo datos={equipo} key={equipo.titulo}/>)
+                equipos.map((equipo) => <Equipo 
+                    datos={equipo} key={equipo.titulo}
+                    
+                    />
+                )
             }
          </section>
     )

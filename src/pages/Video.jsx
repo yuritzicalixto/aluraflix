@@ -4,12 +4,14 @@ import CampoTexto from "../assets/components/CampoTexto"
 import ListaOpciones from "../assets/components/ListaOpciones"
 import Boton from "../assets/components/Boton"
 
-const Video = () => {
+const Video = (props) => {
     const [nombre,actualizarNombre]=useState("")
     const [imagen,actualizarImagen]=useState("")
     const [video,actualizarVideo]=useState("")
     const [descripcion,actualizarDescripcion]=useState("")
     const [equipo, actualizarEquipo]=useState("")
+
+    const {registrarColaborador} = props
 
     const ManejarEnvio=(e)=>{
         e.preventDefault()
@@ -21,7 +23,7 @@ const Video = () => {
             video:video,
             descripcion:descripcion
         }
-        console.log(datosAEnviar);
+        registrarColaborador(datosAEnviar);
     }
     return (
         <section className=" form form-main">
@@ -41,7 +43,8 @@ const Video = () => {
                     actualizarValor={actualizarNombre}/>
                 <ListaOpciones
                     valor={equipo}
-                    actualizarEquipo={actualizarEquipo}/>
+                    actualizarEquipo={actualizarEquipo}
+                    equipos={props.equipos}/>
                 <CampoTexto 
                     titulo="Imagen" 
                     placeholder="ingrese un enlace de imagen" 

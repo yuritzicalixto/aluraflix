@@ -6,11 +6,11 @@ const Colaborador =()=> {
         <div class="product-card">
             <img src="https://images.pexels.com/photos/210528/pexels-photo-210528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen"/>
             <div class="product-info">
-              <div>
+              <div className="info-card">
                 <p>$120,00</p>
                 <p>Bike</p>
               </div>
-              <figure>
+              <figure className="icon-eliminar">
                 <img src={x} alt="imagen"/>
               </figure>
             </div>
