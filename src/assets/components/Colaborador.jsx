@@ -1,14 +1,15 @@
 import "../css/Colaborador.css"
 import x from "../img/marca-x-octagono.png"
 
-const Colaborador =()=> {
+const Colaborador =(props)=> {
+  const {nombre, categoria, imagen, video, descripcion} = props.datos
     return <section>
-        <div class="product-card">
-            <img src="https://images.pexels.com/photos/210528/pexels-photo-210528.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen"/>
-            <div class="product-info">
+        <div className="product-card">
+            <img src={imagen} alt={nombre}/>
+            <div className="product-info">
               <div className="info-card">
-                <p>$120,00</p>
-                <p>Bike</p>
+                <p>{nombre}</p>
+                <p>{descripcion}</p>
               </div>
               <figure className="icon-eliminar">
                 <img src={x} alt="imagen"/>

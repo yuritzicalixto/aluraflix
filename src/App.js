@@ -5,11 +5,11 @@ import Header from './pages/Header';
 import Foter from './pages/Footer';
 import Video from './pages/Video';
 import Seccion from './pages/Seccion';
-import EquiposSec from './pages/EquiposSec';
+// import EquiposSec from './pages/EquiposSec';
 import Equipo from './assets/components/Equipo';
 
 function App() {
-  const [mostrarFormulario, actualizarMostrar]= useState(true)
+  const [mostrarFormulario, actualizarMostrar]= useState(false)
   const [colaboradores, actualizarColaboradores] = useState([])
   //Ternario --> condicion ? seMuestra : noSeMuestra
   //condicion && seMuestra 
@@ -48,14 +48,14 @@ function App() {
         /> 
     }
     <Seccion cambiarMostrar={cambiarMostrar}/>
-     <EquiposSec/> 
-     {/* {
+     {/* <EquiposSec/>  */}
+    {
         equipos.map((equipo) => <Equipo 
           datos={equipo} key={equipo.titulo}
-          colaboradores={colaboradores}
+          colaboradores={colaboradores.filter( colaborador => colaborador.equipo === equipo.titulo)}
           />
         )
-    }  */}
+    }  
     <Foter/>
     </>
   );
