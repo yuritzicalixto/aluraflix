@@ -48,14 +48,14 @@ function App() {
         /> 
     }
     <Seccion cambiarMostrar={cambiarMostrar}/>
-    {/* <EquiposSec/> */}
-     {
+     <EquiposSec/> 
+     {/* {
         equipos.map((equipo) => <Equipo 
           datos={equipo} key={equipo.titulo}
           colaboradores={colaboradores}
           />
         )
-    } 
+    }  */}
     <Foter/>
     </>
   );
